@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Hub Spot Test Sanity Suite" duration-ms="43240" started-at="2020-01-13T15:43:55 IST" finished-at="2020-01-13T15:44:39 IST">
+    <groups>
+    </groups>
+    <test name="Hub Spot Sanity Test" duration-ms="43240" started-at="2020-01-13T15:43:55 IST" finished-at="2020-01-13T15:44:39 IST">
+      <class name="com.qa.hubspot.tests.LoginPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@3359c978]" name="setUp" is-config="true" duration-ms="20680" started-at="2020-01-13T15:43:55 IST" finished-at="2020-01-13T15:44:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyLoginPageTitleTest()[pri:1, instance:com.qa.hubspot.tests.LoginPageTest@3359c978]" name="verifyLoginPageTitleTest" duration-ms="201" started-at="2020-01-13T15:44:16 IST" finished-at="2020-01-13T15:44:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginPageTitleTest -->
+        <test-method status="PASS" signature="verifySignUpLink()[pri:2, instance:com.qa.hubspot.tests.LoginPageTest@3359c978]" name="verifySignUpLink" duration-ms="168" started-at="2020-01-13T15:44:17 IST" finished-at="2020-01-13T15:44:17 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignUpLink -->
+        <test-method status="FAIL" signature="loginTest()[pri:3, instance:com.qa.hubspot.tests.LoginPageTest@3359c978]" name="loginTest" duration-ms="21014" started-at="2020-01-13T15:44:17 IST" finished-at="2020-01-13T15:44:38 IST">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for title to contain "Reports dashboard". Current title: "HubSpot Login" (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WKWIN4472712', ip: '10.207.188.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\abhpraka\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52557}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 105f0a32da867d91391f402e1f8293ee]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for title to contain "Reports dashboard". Current title: "HubSpot Login" (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WKWIN4472712', ip: '10.207.188.108', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.88, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\abhpraka\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52557}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 105f0a32da867d91391f402e1f8293ee
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+at com.qa.hubspot.util.ElementUtil.waitForPageTitle(ElementUtil.java:91)
+at com.qa.hubspot.pages.LoginPage.doLogin(LoginPage.java:59)
+at com.qa.hubspot.tests.LoginPageTest.loginTest(LoginPageTest.java:60)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.hubspot.tests.LoginPageTest@3359c978]" name="tearDown" is-config="true" duration-ms="812" started-at="2020-01-13T15:44:38 IST" finished-at="2020-01-13T15:44:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.hubspot.tests.LoginPageTest -->
+    </test> <!-- Hub Spot Sanity Test -->
+  </suite> <!-- Hub Spot Test Sanity Suite -->
+</testng-results>
